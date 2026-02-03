@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>MIMI@cielprof.com</span>
+      <span>+234 813 347 4986</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo">
+        <img src="Ciel Logo.JPG" alt="CIEL Professionals Logo" class="logo__img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course-videos.html">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login -->
+  <section class="cp-section">
+    <div class="cp-container">
+
+      <div class="auth-wrap">
+        <div class="auth-card">
+
+          <h2 class="auth-title">Welcome Back</h2>
+          <p class="auth-sub">Login to access your courses and videos.</p>
+
+          <form id="loginForm" novalidate>
+
+            <div class="field">
+              <label class="label" for="loginEmail">Email Address</label>
+              <input
+                class="input"
+                id="loginEmail"
+                type="email"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="field">
+              <label class="label" for="loginPassword">Password</label>
+              <input
+                class="input"
+                id="loginPassword"
+                type="password"
+                placeholder="Enter your password"
+              />
+              <div class="auth-actions">
+                <span class="toggle-pass" id="togglePassword">Show</span>
+                <a href="#" class="link">Forgot password?</a>
+              </div>
+            </div>
+
+            <button class="btn btn--full" type="submit">Login</button>
+
+            <div class="auth-error" id="loginError"></div>
+            <div class="auth-success" id="loginSuccess"></div>
+
+          </form>
+
+          <div class="auth-links">
+            Don’t have an account?
+            <a href="register.html" class="link">Create one</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 CIEL Professionals</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Courses | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>MIMI@cielprof.com</span>
+      <span>+234 813 347 4986</span>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo">
+        <img src="Ciel Logo.JPG" alt="CIEL Professionals Logo" class="logo__img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="is-active-link">Courses</a>
+        <a href="course-videos.html">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="upcoming-classes.html">Upcoming Classes</a>
+        <a href="news-letter.html">Newsletter</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="link" href="login.html">Login</a>
+        <a class="btn btn--small" href="register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <p class="eyebrow">Browse</p>
+        <h1>All Course Categories</h1>
+        <p class="lead">
+          Explore our professional training programs across project management,
+          business analysis, data, technology, and cybersecurity.
+        </p>
+      </div>
+
+      <div class="hero__card">
+        <h3>Search Courses</h3>
+        <input class="input" id="courseSearch" placeholder="Search courses..." />
+        <button class="btn btn--full" id="courseSearchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE CATEGORIES -->
+  <section class="cp-section">
+    <div class="cp-container">
+
+      <div class="cp-head cp-head--row">
+        <div>
+          <p class="cp-kicker">Categories</p>
+          <h2 class="cp-title">Browse by Category</h2>
+        </div>
+
+        <div class="cp-tabs" role="tablist" aria-label="Course categories">
+          <button class="cp-tab is-active" type="button" data-filter="all">All</button>
+          <button class="cp-tab" type="button" data-filter="pm">Project Management</button>
+          <button class="cp-tab" type="button" data-filter="ba">Business Analysis</button>
+          <button class="cp-tab" type="button" data-filter="data">Data &amp; Analytics</button>
+          <button class="cp-tab" type="button" data-filter="tech">Technology</button>
+          <button class="cp-tab" type="button" data-filter="cyber">Cyber &amp; IT</button>
+          <button class="cp-tab" type="button" data-filter="hse">HSE</button>
+          <button class="cp-tab" type="button" data-filter="eng">Engineering</button>
+        </div>
+      </div>
+
+      <!-- Anchor targets for category links from home page -->
+      <div class="anchor-row">
+        <span id="pm"></span>
+        <span id="ba"></span>
+        <span id="data"></span>
+        <span id="tech"></span>
+        <span id="cyber"></span>
+        <span id="hse"></span>
+        <span id="eng"></span>
+      </div>
+
+      <!-- COURSES GRID -->
+      <div class="cp-grid cp-grid--4" id="coursesGrid">
+
+        <!-- PROJECT MANAGEMENT -->
+        <article class="product-card" data-cat="pm">
+          <a class="product-card__img" href="register.html">
+            <img src="Project.jpg" alt="PMP" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Project Management Professional (PMP)</h3>
+            <p class="product-card__price">₦150,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="pm">
+          <a class="product-card__img" href="register.html">
+            <img src="Agile.jpg" alt="Agile Scrum Master" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Agile Scrum Master</h3>
+            <p class="product-card__price">₦120,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="pm">
+          <a class="product-card__img" href="register.html">
+            <img src="PPC.JPG" alt="Project Planning and Control" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Project Planning and Control (PPC)</h3>
+            <p class="product-card__price">₦200,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- BUSINESS ANALYSIS -->
+        <article class="product-card" data-cat="ba">
+          <a class="product-card__img" href="register.html">
+            <img src="cbap.jpg" alt="CBAP" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Certified Business Analysis Professional (CBAP)</h3>
+            <p class="product-card__price">₦99,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="ba">
+          <a class="product-card__img" href="register.html">
+            <img src="jira.jpg" alt="Software Testing" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Software Testing for Business Analyst and PM</h3>
+            <p class="product-card__price">₦100,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- DATA & ANALYTICS -->
+        <article class="product-card" data-cat="data">
+          <a class="product-card__img" href="register.html">
+            <img src="Data Analysis-BI.jpg" alt="Power BI" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Data Analysis with Power BI</h3>
+            <p class="product-card__price">₦75,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="data">
+          <a class="product-card__img" href="register.html">
+            <img src="Data Science-ML.jpg" alt="Data Science and Machine Learning" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Data Science and Machine Learning</h3>
+            <p class="product-card__price">₦500,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- TECHNOLOGY -->
+        <article class="product-card" data-cat="tech">
+          <a class="product-card__img" href="register.html">
+            <img src="PrimaveraP6.jpg" alt="Primavera P6" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Primavera P6 Software</h3>
+            <p class="product-card__price">₦60,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="tech">
+          <a class="product-card__img" href="register.html">
+            <img src="MS-Azure.jpg" alt="Microsoft Azure" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Microsoft Azure</h3>
+            <p class="product-card__price">₦300,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="tech">
+          <a class="product-card__img" href="register.html">
+            <img src="Frontend-dev.jpg" alt="Front End Development & UI UX Design" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Front End Development & UX/UI Design</h3>
+            <p class="product-card__price">₦300,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="tech">
+          <a class="product-card__img" href="register.html">
+            <img src="Backend-dev.jpg" alt="Back-End Software Development Training" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Back-End Software Development Practical Training</h3>
+            <p class="product-card__price">₦500,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="tech">
+          <a class="product-card__img" href="register.html">
+            <img src="Python.jpg" alt="Python Programming & Web Development" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Python Programming & Web Development</h3>
+            <p class="product-card__price">₦500,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- CYBER & IT -->
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="Cyber.jpg" alt="Cyber Security" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Cyber Security</h3>
+            <p class="product-card__price">₦500,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="AWS-security.jpg" alt="AWS Security" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AWS Security</h3>
+            <p class="product-card__price">₦100,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="Comptia A+.jpg" alt="CompTIA Training" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CompTIA (A+, Network+, Security+) Training</h3>
+            <p class="product-card__price">₦200,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="ITIL.jpg" alt="ITIL v4" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">ITIL V4</h3>
+            <p class="product-card__price">₦200,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="CISA.jpg" alt="CISA" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISA</h3>
+            <p class="product-card__price">₦300,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="CISM.jpg" alt="CISM" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISM</h3>
+            <p class="product-card__price">₦300,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber">
+          <a class="product-card__img" href="register.html">
+            <img src="CISSP.jpg" alt="CISSP" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISSP</h3>
+            <p class="product-card__price">₦300,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- HSE -->
+        <article class="product-card" data-cat="hse">
+          <a class="product-card__img" href="register.html">
+            <img src="HSE 123.jpg" alt="HSE123" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">HSE123</h3>
+            <p class="product-card__price">₦100,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+        <!-- ENGINEERING -->
+        <article class="product-card" data-cat="eng">
+          <a class="product-card__img" href="register.html">
+            <img src="AutoCad.jpg" alt="Engineering Software" />
+          </a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Engineering Software (AutoCAD, Revit, 3D Modelling)</h3>
+            <p class="product-card__price">₦500,000</p>
+            <a class="product-card__btn" href="register.html">Enroll</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  

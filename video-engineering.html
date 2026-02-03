@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Software Video | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar__inner"><span>MIMI@cielprof.com</span><span>+234 813 347 4986</span></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="Logo.jpg" alt="CIEL Professionals Logo" class="logo__img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course-videos.html" class="is-active-link">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="upcoming-classes.html">Upcoming Classes</a>
+        <a href="news-letter.html">Newsletter</a>
+      </nav>
+      <div class="header__actions"><a class="link" href="login.html">Login</a><a class="btn btn--small" href="register.html">Register</a></div>
+    </div>
+  </header>
+
+  <section class="cp-section cp-section--soft">
+    <div class="cp-container">
+      <div class="cp-head"><p class="cp-kicker">Course Video</p><h2 class="cp-title">Engineering Software (AutoCAD, Revit, 3D Modelling) — Video Library</h2></div>
+
+      <div class="video-wrap" data-locked="true" id="videoWrap">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Engineering Software Video" allowfullscreen></iframe>
+          <div class="video-lock" id="videoLock">
+            <div class="video-lock__card">
+              <h3 class="video-lock__title">Login Required</h3>
+              <p class="video-lock__text">Please login to watch. Register to get access to the full library.</p>
+              <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                <a class="btn btn--small" href="login.html">Login</a>
+                <a class="btn btn--ghost btn--small" href="register.html">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-meta">
+        <div class="box">
+          <h3>Course Outline</h3>
+          <ul class="ul-clean">
+            <li>AutoCAD interface + drafting fundamentals</li>
+            <li>Revit basics: modelling + families</li>
+            <li>3D modelling workflow overview</li>
+            <li>Sheets, annotations, and exports</li>
+            <li>Mini project walkthrough</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Quick Actions</h3>
+          <ul class="ul-clean">
+            <li><a href="courses.html#eng">View Engineering Courses</a></li>
+            <li><a href="course-videos.html#eng">Back to Videos (Engineering)</a></li>
+            <li><a href="contact.html">Need Help? Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container footer__inner"><p>© 2026 CIEL Professionals</p></div></footer>
+
+  <script src="app.js"></script>
+  <script>
+    const wrap = document.getElementById("videoWrap");
+    const lock = document.getElementById("videoLock");
+    if (wrap && lock && wrap.dataset.locked === "false") lock.style.display = "none";
+  </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Videos | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>MIMI@cielprof.com</span>
+      <span>+234 813 347 4986</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo" aria-label="CIEL Professionals Home">
+        <img src="Ciel Logo.JPG" alt="CIEL Professionals Logo" class="logo__img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course-videos.html" class="is-active-link">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="upcoming-classes.html">Upcoming Classes</a>
+        <a href="news-letter.html">Newsletter</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="link" href="login.html">Login</a>
+        <a class="btn btn--small" href="register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <p class="eyebrow">Online Library</p>
+        <h1>Course Videos</h1>
+        <p class="lead">Watch self-paced course videos by category.</p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#videoCategories">Browse Categories</a>
+          <a class="btn btn--ghost" href="register.html">Register</a>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <h3>Search Videos</h3>
+        <input class="input" id="videoSearch" placeholder="Search videos..." />
+        <button class="btn btn--full" id="videoSearchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-section" id="videoCategories">
+    <div class="cp-container">
+
+      <div class="cp-head cp-head--row">
+        <div>
+          <p class="cp-kicker">Categories</p>
+          <h2 class="cp-title">Browse Video Categories</h2>
+        </div>
+
+        <div class="cp-tabs" role="tablist" aria-label="Video categories">
+          <button class="cp-tab is-active" type="button" data-filter="all">All</button>
+          <button class="cp-tab" type="button" data-filter="pm">Project Management</button>
+          <button class="cp-tab" type="button" data-filter="ba">Business Analysis</button>
+          <button class="cp-tab" type="button" data-filter="data">Data &amp; Analytics</button>
+          <button class="cp-tab" type="button" data-filter="tech">Technology</button>
+          <button class="cp-tab" type="button" data-filter="cyber">Cyber &amp; IT</button>
+          <button class="cp-tab" type="button" data-filter="hse">HSE</button>
+          <button class="cp-tab" type="button" data-filter="eng">Engineering</button>
+        </div>
+      </div>
+
+      <div class="anchor-row">
+        <span id="pm"></span><span id="ba"></span><span id="data"></span><span id="tech"></span>
+        <span id="cyber"></span><span id="hse"></span><span id="eng"></span>
+      </div>
+
+      <div class="cp-grid cp-grid--4" id="videosGrid">
+
+        <!-- PM -->
+        <article class="product-card" data-cat="pm" data-video="pmp">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-pmp.html" data-watch="1"><img src="Project.jpg" alt="PMP Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">PMP Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">6h 30m</span>
+              <span class="badge badge--dark">Intermediate</span>
+            </div>
+            <div class="tags">
+              <span class="tag">PMBOK</span><span class="tag">People</span><span class="tag">Process</span>
+            </div>
+            <a class="product-card__btn" href="video-pmp.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="pm" data-video="agile">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-agile.html" data-watch="1"><img src="Agile.jpg" alt="Agile Scrum Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Agile Scrum Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 10m</span>
+              <span class="badge badge--dark">Beginner</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Scrum</span><span class="tag">Sprint</span><span class="tag">Backlog</span>
+            </div>
+            <a class="product-card__btn" href="video-agile.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <!-- BA -->
+        <article class="product-card" data-cat="ba" data-video="cbap">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-cbap.html" data-watch="1"><img src="cbap.jpg" alt="CBAP Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CBAP Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">5h 20m</span>
+              <span class="badge badge--dark">Intermediate</span>
+            </div>
+            <div class="tags">
+              <span class="tag">BABOK</span><span class="tag">Elicitation</span><span class="tag">Requirements</span>
+            </div>
+            <a class="product-card__btn" href="video-cbap.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <!-- DATA -->
+        <article class="product-card" data-cat="data" data-video="powerbi">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-powerbi.html" data-watch="1"><img src="Data Analysis-BI.jpg" alt="Power BI Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Power BI Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">3h 45m</span>
+              <span class="badge badge--dark">Beginner</span>
+            </div>
+            <div class="tags">
+              <span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Dashboard</span>
+            </div>
+            <a class="product-card__btn" href="video-powerbi.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <!-- TECH -->
+        <article class="product-card" data-cat="tech" data-video="p6">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-p6.html" data-watch="1"><img src="PrimaveraP6.jpg" alt="Primavera P6 Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Primavera P6 Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 40m</span>
+              <span class="badge badge--dark">Intermediate</span>
+            </div>
+            <div class="tags">
+              <span class="tag">WBS</span><span class="tag">CPM</span><span class="tag">Baselines</span>
+            </div>
+            <a class="product-card__btn" href="video-p6.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <!-- CYBER -->
+        <article class="product-card" data-cat="cyber" data-video="cyber">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-cyber.html" data-watch="1"><img src="Cyber.jpg" alt="Cyber Security Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Cyber Security Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">6h 00m</span>
+              <span class="badge badge--dark">Beginner</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Network</span><span class="tag">Threats</span><span class="tag">IR</span>
+            </div>
+            <a class="product-card__btn" href="video-cyber.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="itil">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-itil.html" data-watch="1"><img src="ITIL.jpg" alt="ITIL v4 Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">ITIL v4 Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">2h 30m</span>
+              <span class="badge badge--dark">Beginner</span>
+            </div>
+            <div class="tags">
+              <span class="tag">SVS</span><span class="tag">SVC</span><span class="tag">Practices</span>
+            </div>
+            <a class="product-card__btn" href="video-itil.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="aws">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-aws.html" data-watch="1"><img src="AWS-security.jpg" alt="AWS Security Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AWS Security Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">3h 10m</span>
+              <span class="badge badge--dark">Intermediate</span>
+            </div>
+            <div class="tags">
+              <span class="tag">IAM</span><span class="tag">VPC</span><span class="tag">CloudTrail</span>
+            </div>
+            <a class="product-card__btn" href="video-aws.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="comptia">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-comptia.html" data-watch="1"><img src="Comptia A+.jpg" alt="CompTIA Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CompTIA Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">5h 10m</span>
+              <span class="badge badge--dark">Beginner</span>
+            </div>
+            <div class="tags">
+              <span class="tag">A+</span><span class="tag">Network+</span><span class="tag">Security+</span>
+            </div>
+            <a class="product-card__btn" href="video-comptia.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="cisa">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-cisa.html" data-watch="1"><img src="CISA.jpg" alt="CISA Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISA Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 00m</span>
+              <span class="badge badge--dark">Intermediate</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Audit</span><span class="tag">Governance</span><span class="tag">Controls</span>
+            </div>
+            <a class="product-card__btn" href="video-cisa.html" data-watch="1">Watch</a>
+          </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="cism">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-cism.html" data-watch="1"><img src="CISM.jpg" alt="CISM Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISM Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 30m</span>
+              <span class="badge badge--dark">Advanced</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Governance</span><span class="tag">Risk</span><span class="tag">IR</span>
+            </div>
+            <a class="product-card__btn" href="video-cism.html" data-watch="1">Watch</a>
+             </div>
+        </article>
+          
+            <article class="product-card" data-cat="cyber" data-video="cism">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-cissp.html" data-watch="1"><img src="CISSP.jpg" alt="CISSP Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">CISSP Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 30m</span>
+              <span class="badge badge--dark">Advanced</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Governance</span><span class="tag">Risk</span><span class="tag">IR</span>
+            </div>
+            <a class="product-card__btn" href="video-cissp.html" data-watch="1">Watch</a>
+             </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="cism">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-hse.html" data-watch="1"><img src="HSE 123.jpg" alt="HSE Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">HSE Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 30m</span>
+              <span class="badge badge--dark">Advanced</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Governance</span><span class="tag">Risk</span><span class="tag">IR</span>
+            </div>
+            <a class="product-card__btn" href="video-hse.html" data-watch="1">Watch</a>
+             </div>
+        </article>
+
+        <article class="product-card" data-cat="cyber" data-video="cism">
+          <span class="progress-ribbon">Continue Watching</span>
+          <a class="product-card__img" href="video-engineering.html" data-watch="1"><img src="AutoCad.jpg" alt="ENGINEERING Video Library" /></a>
+          <div class="product-card__body">
+            <h3 class="product-card__title">ENGINEERING Video Library</h3>
+            <div class="card-meta">
+              <span class="badge badge--soft">4h 30m</span>
+              <span class="badge badge--dark">Advanced</span>
+            </div>
+            <div class="tags">
+              <span class="tag">Governance</span><span class="tag">Risk</span><span class="tag">IR</span>
+            </div>
+            <a class="product-card__btn" href="video-engineering.html" data-watch="1">Watch</a>
+             </div>
+        </article>

@@ -1,0 +1,183 @@
+<!-- =========================
+news-letter.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>MIMI@cielprof.com</span>
+      <span>+234 813 347 4986</span>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="CIEL Professionals Home">
+        <img src="Ciel Logo.JPG" alt="CIEL Professionals Logo" class="logo__img" />
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        ☰
+      </button>
+
+      <!-- Nav -->
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course-videos.html">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="upcoming-classes.html">Upcoming Classes</a>
+        <a href="news-letter.html" class="is-active-link">Newsletter</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="link" href="login.html">Login</a>
+        <a class="btn btn--small" href="register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__content">
+        <p class="eyebrow">Stay Updated</p>
+        <h1>CIEL Newsletter</h1>
+        <p class="lead">
+          Get course announcements, discounts, class schedules, and free templates delivered to your inbox.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#subscribe">Subscribe</a>
+          <a class="btn btn--ghost" href="upcoming-classes.html">View Upcoming Classes</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="meta-pill">✅ Monthly Updates</div>
+          <div class="meta-pill">✅ Discounts & Early Access</div>
+          <div class="meta-pill">✅ Free Resources</div>
+        </div>
+      </div>
+
+      <div class="hero__card" id="subscribe">
+        <h3>Subscribe</h3>
+        <p class="muted">Join our mailing list (no spam).</p>
+
+        <form id="newsletterForm">
+          <input class="input" name="fullName" placeholder="Full Name" required />
+          <div style="height:10px"></div>
+          <input class="input" name="email" type="email" placeholder="Email Address" required />
+          <div style="height:10px"></div>
+
+          <select class="input" name="interest" required>
+            <option value="" disabled selected>Select Interest</option>
+            <option value="Project Management">Project Management</option>
+            <option value="Business Analysis">Business Analysis</option>
+            <option value="Data & Analytics">Data & Analytics</option>
+            <option value="Technology">Technology</option>
+            <option value="Cyber & IT">Cyber & IT</option>
+            <option value="Engineering">Engineering</option>
+            <option value="HSE">HSE</option>
+          </select>
+
+          <div style="height:12px"></div>
+          <button class="btn btn--full" type="submit">Subscribe</button>
+
+          <p class="muted" id="newsletterMsg" style="margin-top:10px;"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Latest Newsletter Posts (Static placeholders) -->
+  <section class="cp-section cp-section--soft">
+    <div class="cp-container">
+      <div class="cp-head">
+        <p class="cp-kicker">Latest</p>
+        <h2 class="cp-title">Recent Updates</h2>
+      </div>
+
+      <div class="cp-grid cp-grid--3">
+        <article class="service-card">
+          <div class="service-card__icon">🗞️</div>
+          <h3 class="service-card__title">New Cohorts Announced</h3>
+          <p class="service-card__text">
+            New class dates are now available for PMP, Scrum, P6, and Power BI.
+          </p>
+          <a class="btn btn--ghost btn--small" href="upcoming-classes.html">View Schedule</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">🎁</div>
+          <h3 class="service-card__title">Free Templates</h3>
+          <p class="service-card__text">
+            Download practical templates you can use at work: charters, plans, and trackers.
+          </p>
+          <a class="btn btn--ghost btn--small" href="courses.html">Explore Courses</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">💡</div>
+          <h3 class="service-card__title">Study Tips & Exam Strategy</h3>
+          <p class="service-card__text">
+            Weekly tips from instructors to help you pass certification exams faster.
+          </p>
+          <a class="btn btn--ghost btn--small" href="course-videos.html">Watch Videos</a>
+        </article>
+      </div>
+
+      <div class="cp-center">
+        <a class="cp-cta" href="contact.html">Request a custom corporate training</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 CIEL Professionals</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+  <!-- Simple "fake submit" confirmation (replace with real backend later) -->
+  <script>
+    (function () {
+      const form = document.getElementById("newsletterForm");
+      const msg = document.getElementById("newsletterMsg");
+
+      if (!form) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const data = new FormData(form);
+        const name = (data.get("fullName") || "").toString().trim();
+
+        // Replace this with fetch() to your backend or email provider API
+        msg.textContent = "Thanks" + (name ? ", " + name : "") + "! You are subscribed successfully.";
+        form.reset();
+      });
+    })();
+  </script>
+
+</body>
+</html>

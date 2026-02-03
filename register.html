@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | CIEL Professionals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>MIMI@cielprof.com</span>
+      <span>+234 813 347 4986</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo" aria-label="CIEL Professionals Home">
+        <img src="Ciel Logo.JPG" alt="CIEL Professionals Logo" class="logo__img" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course-videos.html">Course Videos</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="link" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Register -->
+  <section class="cp-section">
+    <div class="cp-container">
+
+      <div class="auth-wide">
+        <div class="auth-card">
+
+          <h2 class="auth-title">Create Your Account</h2>
+          <p class="auth-sub">Register to enroll and access your course videos.</p>
+
+          <form id="registerForm" novalidate>
+
+            <div class="auth-grid">
+              <div class="field">
+                <label class="label" for="regFullName">Full Name</label>
+                <input class="input" id="regFullName" type="text" placeholder="Your full name" />
+                <div class="error" id="eRegName"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regEmail">Email Address</label>
+                <input class="input" id="regEmail" type="email" placeholder="you@example.com" />
+                <div class="error" id="eRegEmail"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regPhone">Phone Number</label>
+                <input class="input" id="regPhone" type="tel" placeholder="e.g. 0813 347 4986" />
+                <p class="pw-hint">Digits only (10–14 digits).</p>
+                <div class="error" id="eRegPhone"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regCourse">Course Interest</label>
+                <select class="select" id="regCourse">
+                  <option value="">Select a course</option>
+                  <option value="pmp">Project Management (PMP)</option>
+                  <option value="agile">Agile Scrum Master</option>
+                  <option value="p6">Primavera P6</option>
+                  <option value="cbap">CBAP</option>
+                  <option value="powerbi">Power BI</option>
+                  <option value="cyber">Cyber Security</option>
+                  <option value="itil">ITIL v4</option>
+                  <option value="aws">AWS Security</option>
+                  <option value="comptia">CompTIA</option>
+                  <option value="hse">HSE 1-2-3</option>
+                  <option value="engineering">Engineering Software</option>
+                </select>
+                <div class="error" id="eRegCourse"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regMode">Delivery Mode</label>
+                <select class="select" id="regMode">
+                  <option value="">Select delivery mode</option>
+                  <option value="online">Online / Self-Paced</option>
+                  <option value="physical">Physical Classroom</option>
+                  <option value="virtual-live">Virtual Live</option>
+                </select>
+                <div class="error" id="eRegMode"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regPassword">Password</label>
+                <input class="input" id="regPassword" type="password" placeholder="Create a password" />
+                <div class="inline-actions">
+                  <span class="toggle-pass" id="toggleRegPass1">Show</span>
+                  <span class="pw-hint">Min 8, uppercase, lowercase & number</span>
+                </div>
+                <div class="error" id="eRegPass"></div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="regPassword2">Confirm Password</label>
+                <input class="input" id="regPassword2" type="password" placeholder="Confirm password" />
+                <div class="inline-actions">
+                  <span class="toggle-pass" id="toggleRegPass2">Show</span>
+                  <a class="small-link" href="login.html">Already have an account?</a>
+                </div>
+                <div class="error" id="eRegPass2"></div>
+              </div>
+            </div>
+
+            <div class="check-row">
+              <input type="checkbox" id="regTerms" />
+              <label for="regTerms">
+                I agree to the <a href="#" class="small-link">Terms &amp; Conditions</a> and <a href="#" class="small-link">Privacy Policy</a>.
+              </label>
+            </div>
+            <div class="error" id="eRegTerms"></div>
+
+            <button class="btn btn--full" type="submit">Create Account</button>
+
+            <div class="auth-success" id="regSuccess"></div>
+
+          </form>
+
+          <div class="auth-links">
+            Already have an account?
+            <a href="login.html" class="link">Login</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 CIEL Professionals</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
